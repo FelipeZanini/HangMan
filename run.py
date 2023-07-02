@@ -43,3 +43,21 @@ def play_again(tries, word):
     """
     win_message = f"\nConsgratulations, the word is {word} \n"
     lose_message = f"\nSorry, You run out of guesses the word is {word} \n"
+    # Print to the user whether he won or lost the game
+    message = lose_message if tries == 6 else win_message
+    print("\n---------------------------------------------------")
+    print(message)
+    print("---------------------------------------------------")
+    # Will loop until the user, enters his intention to leave or stay playing
+    while True:
+        keep_playing = input("\nWould you like to keep playing? y/n ").upper()
+        if keep_playing == "Y":
+            print("\n-----------------")
+            print("Hangman Game")
+            print("-----------------\n")
+            main()
+        elif keep_playing == "N":
+            print("\nLeaving the game...")
+            return False
+        else:
+            print(f"\n- {keep_playing.upper()} - is not a valid option")
