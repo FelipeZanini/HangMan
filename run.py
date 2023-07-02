@@ -74,3 +74,5 @@ def display_hangman(word, guessed, tries):
     mistery_word = [char if char in guessed else "_" for char in word]
     for char in mistery_word:
         print(char, end='  ')
+
+        aa
