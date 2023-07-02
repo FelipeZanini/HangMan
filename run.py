@@ -1,5 +1,8 @@
+""" This file contains the main functions of the hangman game """
+# Import random module to select random words
 import random
 from words import WORDS_LIST
+# Import hangman stages
 from hangman import HANGMAN_STAGES
 
 
