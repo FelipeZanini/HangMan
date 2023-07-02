@@ -75,4 +75,12 @@ def display_hangman(word, guessed, tries):
     for char in mistery_word:
         print(char, end='  ')
 
-        aa
+
+def main():
+    """
+    Main function
+    """
+    guessed = []
+    word = get_word()
+    tries = play(word, guessed)
+    play_again(tries, word)
