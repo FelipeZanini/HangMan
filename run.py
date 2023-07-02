@@ -41,4 +41,5 @@ def play_again(tries, word):
     runs out of tries or when the word is guessed,
     asking if the player would like to keep playing.
     """
-    
+    win_message = f"\nConsgratulations, the word is {word} \n"
+    lose_message = f"\nSorry, You run out of guesses the word is {word} \n"
