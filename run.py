@@ -14,8 +14,8 @@ def get_word():
 def play(word, guessed):
     """
     Responsible for getting the guesses from the user, and assures that
-    only single letters or the whole word is input, calling the function
-    to display the hangman whether the player failed in his attempt
+    only single letters or the whole word will be inputted, calling the 
+    function to display the hangman whether the player failed in his attempt
     or guessed the letter or the mystery word.
     """
     tries = 0
@@ -84,3 +84,9 @@ def main():
     word = get_word()
     tries = play(word, guessed)
     play_again(tries, word)
+
+
+print("\n----------------------- \n")
+print("welcome to Hangman Game")
+print("\n----------------------- ")
+main()
