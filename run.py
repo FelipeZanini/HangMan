@@ -61,3 +61,16 @@ def play_again(tries, word):
             return False
         else:
             print(f"\n- {keep_playing.upper()} - is not a valid option")
+
+
+def display_hangman(word, guessed, tries):
+    """
+    Give visual feedback to the user, in which hangman stage he's,
+    also, the words guessed so far.
+    """
+    print(HANGMAN_STAGES[tries])
+    # Display the letter of the word, as an underscore,
+    # or the letter itself whether the user guessed it
+    mistery_word = [char if char in guessed else "_" for char in word]
+    for char in mistery_word:
+        print(char, end='  ')
