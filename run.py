@@ -14,7 +14,7 @@ def get_word():
 def play(word, guessed):
     """
     Responsible for getting the guesses from the user, and assures that
-    only single letters or the whole word will be inputted, calling the 
+    only single letters or the whole word will be inputted, calling the
     function to display the hangman whether the player failed in his attempt
     or guessed the letter or the mystery word.
     """
