@@ -33,3 +33,12 @@ def play(word, guessed):
         else:
             print("Sorry, that word was already guessed!\n")
     return tries
+
+
+def play_again(tries, word):
+    """
+    The game-over function is called whether the player
+    runs out of tries or when the word is guessed,
+    asking if the player would like to keep playing.
+    """
+    
