@@ -1,31 +1,45 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# __Hangman'os'_
 
-Welcome Felipe Silva,
+Hangman'os' is a pure Python language program, running Code Institute mock terminal deployed on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+You can use your memory skills, challenging yourself to try to find the right word while feeling the nostalgia of this amazing game.
 
-## Reminders
+![Responsice Mockup](/assets/images/ResponsiceMockup.png)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## How to play
 
-## Creating the Heroku app
+The game consists of a simple Hangman game, well-known for most of us, being present day by day in our childhood. As a brief resume of the game, we can say that is a word guess game with six attempts to win, in this project the computer gets a random word and display its length to the user, who can guess a letter of the word or the whole word, if the user entered the wrong letter, will be displayed for him, the head, after the torso and so on, otherwise if he guesses the right one, the corresponding letter and its position on the word will be displayed for him.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features
+### Existing Features
 
-1. `heroku/python`
-2. `heroku/nodejs`
+- __Random Word Generation__
+ 
+  - A message to welcome the user to the game is displayed.
+  - The gallows pole is displayed to the user.
+  - The user can see the word length and the mystery letters are displayed as underscores.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+![Land Page](/assets/images/Start-Page.png)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+- __Guesses Conditions__
+ 
+  - The user can guess the letters according to the following conditions:
+    - Only alphabetic characters are inputted.
+    - Only one letter per turn or the word itself.
+    - Only new guesses, assuring the user did not input the same letter again.
 
-Connect your GitHub repository and deploy as normal.
+![Guesses Conditions](/assets/images/Guesses-Conditions.png)
 
-## Constraints
+- __Right Guesses__
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- If the user guess the letter, the letter would be shown in its corresponding position at the word, even if the letter occurs twice at the word.
 
------
-Happy coding!
+![Right Guesses](/assets/images/Right-Guesses.pngh)
+
+
+- __Hangman Stages__
+ 
+  - The hangman stages is just the visual feedback of how many attempts are lefting.
+  - Each time the user guesses wrong, a part of the hangman will be drawn, first the head, then the torso, arms and finally the legs, ending the game.
+
+![Hangman Stages](/assets/images/Right-Guesses.png)
