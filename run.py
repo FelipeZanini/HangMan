@@ -14,7 +14,7 @@ def get_word():
     return word
 
 
-def play(word, guessed):
+def play(word):
     """
     Responsible for getting the guesses from the user, and assures that
     only single letters or the whole word will be inputted, calling the
@@ -22,19 +22,24 @@ def play(word, guessed):
     or guessed the letter or the mystery word.
     """
     tries = 0
-    while len(word) != len(guessed) and tries != 6:
-        display_hangman(word, guessed, tries)
+    right_guesses = []
+    wrong_guesses = []
+    display_hangman(word, right_guesses, tries)
+    while len(word) != len(right_guesses) and tries != 6:
         guess = input("\n\nPlease, enter your guess: ").upper()
         if guess == word:
             return tries
         while not guess.isalpha() or len(guess) != 1:
             guess = input("Sorry invalid input, please try again: ").upper()
-        if guess not in guessed:
-            guessed += [guess for char in word if char == guess]
+        if guess not in right_guesses and guess not in wrong_guesses:
+            right_guesses += [guess for char in word if char == guess]
             if guess not in word:
                 tries += 1
+                wrong_guesses.append(guess)
         else:
-            print("Sorry, that word was already guessed!\n")
+            print(f"\nSorry, - {guess} - was already typed!")
+            continue
+        display_hangman(word, right_guesses, tries)
     return tries
 
 
@@ -83,9 +88,8 @@ def main():
     """
     Main function
     """
-    guessed = []
     word = get_word()
-    tries = play(word, guessed)
+    tries = play(word)
     play_again(tries, word)
 
 
