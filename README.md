@@ -34,7 +34,7 @@ The game consists of a simple Hangman game, well-known for most of us, being pre
 
 - If the user guess the letter, the letter would be shown in its corresponding position at the word, even if the letter occurs twice at the word.
 
-![Right Guesses](/assets/images/Right-Guesses.pngh)
+![Right Guesses](/assets/images/Right-Guesses.png)
 
 
 - __Hangman Stages__
@@ -42,4 +42,4 @@ The game consists of a simple Hangman game, well-known for most of us, being pre
   - The hangman stages is just the visual feedback of how many attempts are lefting.
   - Each time the user guesses wrong, a part of the hangman will be drawn, first the head, then the torso, arms and finally the legs, ending the game.
 
-![Hangman Stages](/assets/images/Right-Guesses.png)
+![Hangman Stages](/assets/images/Hangman-Stages.png)
