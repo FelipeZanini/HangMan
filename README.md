@@ -43,3 +43,18 @@ The game consists of a simple Hangman game, well-known for most of us, being pre
   - Each time the user guesses wrong, a part of the hangman will be drawn, first the head, then the torso, arms and finally the legs, ending the game.
 
 ![Hangman Stages](/assets/images/Hangman-Stages.png)
+
+- __Game Over Menssage_
+ 
+  - When the game is over, as a result of the user running out of attempts or the correct word is guessed, a message with the user result will be displayed, and then the mystery word will be revealed.
+  - Lastly, the user will be asked if he would like to keep playing or not, if he does want, then a new word will be picked, restarting the game, otherwise the game will exit, just the letters 'y' or 'n' will be accepted as a input, lower or upper case.
+
+![Hangman Stages](/assets/images/Game-Over.png)
+
+### Features Left to Implement
+
+- Allow the user to get a hint to guess the word.
+- Allow user to choose the dificulty, easy, medium or hard.
+  - In the easy mode, the first letter is shown.
+  - In the medium mode, no special rules will apply.
+  - In the hard mode, the user starts with the head, torso and arms drew, leaving just two attempts to guess the word.
