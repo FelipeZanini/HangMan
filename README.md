@@ -1,4 +1,4 @@
-# __Hangman'os'_
+# _Hangman'os'_
 
 Hangman'os' is a pure Python language program, running Code Institute mock terminal deployed on Heroku.
 
@@ -58,3 +58,34 @@ The game consists of a simple Hangman game, well-known for most of us, being pre
   - In the easy mode, the first letter is shown.
   - In the medium mode, no special rules will apply.
   - In the hard mode, the user starts with the head, torso and arms drew, leaving just two attempts to guess the word.
+
+## Testing
+
+- I have tested the code by the following methods:
+ - Passed on the validator code PEPE8, no issues found.
+ - I manually tested the code, passing invalids inputs.
+ - I tried all possibles ways to win or lose the game, and no bugs were found.
+ - The game was tested on Heroku terminal and on the local terminal.
+
+## Validator Testing
+
+- No errors were returned when passing through the official [PEP8](https://pep8ci.herokuapp.com/) validator.
+
+## Bugs
+
+- BLA BLA
+
+# Deployment
+
+> This project was deployed at Heroku, steps for deploy are listed bellow:
+> fork or clone the repository.
+> Creat a new Heroku app.
+> Set up the configs for the deployment.
+> Link the Heroku app to the repository, then Deploy.
+
+- The live link can be found here: [My Game]()
+
+## Credits:
+
+- __Content__ 
+    - BLA BLA
