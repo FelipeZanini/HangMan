@@ -69,11 +69,13 @@ The game consists of a simple Hangman game, well-known for most of us, being pre
 
 ## Validator Testing
 
-- No errors were returned when passing through the official [PEP8](https://pep8ci.herokuapp.com/) validator.
+- No errors were returned when passing through the official [PEP8](https://pep8ci.herokuapp.com/)() validator.
 
 ## Bugs
 
-- BLA BLA
+- When I wrote the function to check if the guess was in the word, the code unexpectedly appended two characters in the same index list, if they both were in the word, causing me a problem to evaluates when the game was finished, that error occurred because I allowed the user to input two characters strings as a guess, the solution was to accept only the whole word or one single character.
+
+- When I fixed the bug described above, I didn't get the expected logical result when I inputed the word to be guessed, that happened because I was checking if the user inputted only one letter before checking if the user had guessed the whole word, in other words, was a flow bug.
 
 # Deployment
 
@@ -87,5 +89,15 @@ The game consists of a simple Hangman game, well-known for most of us, being pre
 
 ## Credits:
 
-- __Content__ 
-    - BLA BLA
+- I was inspired by the design of the gallows pole the and hangman stages, by the code of Darren.
+ - [Darren-Source-Code](https://gist.github.com/lupinetti/8f89e5f33750aa7c91c3)
+- I also watched some tutorias to get me inspired to write this code by my own.
+ - [Kite-Video-Tutorial](https://www.youtube.com/watch?time_continue=4&v=m4nEnsavl6w&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dhangman%2Bpython%26sxsrf%3DAB5stBhnXzgtckX52y8XSx9C0_G0PC5iTQ%253A1688506312853%26ei%3DyI-kZL_dM7KYhbIPxIaPs&source_ve_path=MjM4NTE&feature=emb_title)
+ - [Shaun-Video-Tutorial](https://www.google.com/search?q=hangman+python&sxsrf=AB5stBhnXzgtckX52y8XSx9C0_G0PC5iTQ%3A1688506312853&ei=yI-kZL_dM7KYhbIPxIaPsAE&ved=0ahUKEwi_4emXgPb_AhUyTEEAHUTDAxYQ4dUDCBA&uact=5&oq=hangman+python&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLAToECAAQRzoKCAAQRxDWBBCwAzoECCMQJzoICC4QgAQQywFKBAhBGABQjRBYgBZg5hZoAXABeACAAVaIAa4DkgEBN5gBAKABAcABAcgBCA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:fee61799,vid:pFvSb7cb_Us)
+
+ - I also searched for solutions for the problems that occurred during the project development on the following websites:
+  - [Stackoverflow](https://stackoverflow.com/)
+  - [Geeksforgeeks](https://www.geeksforgeeks.org/)
+  - [Freecodecamp](https://www.freecodecamp.org/news)
+
+- The Code Institute for the deployment terminal
