@@ -1,13 +1,14 @@
 # _Hangman'os'_
 
 Hangman'os' is a pure Python language program, running in Code Institute mock terminal deployed on Heroku.
-You can use your memory and logical skills, challenging yourself trying to find the right word while feeling the nostalgia of this amazing game.
+
+Feel free to challenge yourself in this nostalgic game, while using your memory and your deduction skills to guess the mystery word in classic Hangman game.
 
   ![Mock Up](/assets/images/Mockup.png)
 
 ## How to play
 
-The game consists of a simple Hangman game, well-known for most of us, being present day by day in our childhood. As a brief resume of the game, we can say that is a word guess game with six attempts to win, in this project the computer gets a random word and display its length to the user, who can guess a letter of the word or the whole word, if the user entered the wrong letter, will be displayed for him, the head, after the torso and so on, otherwise if he guesses the right one, the corresponding letter and its position on the word will be displayed for him.
+The game consists of a simple Hangman game, well-known for most of us, being present day by day in our childhood. As a brief resume of the game, we can say that is a word guess game with six attempts to win, in this project the computer gets a random word from a pre-defined list, and display to the user as underscores showing just its lenght, the user can guess a letter or the whole word, whenever the user entered the wrong letter, will be displayed for him, the head, after the torso and so on, otherwise if he guesses the right one, the corresponding letter and its position on the word will be displayed for him.
 
 ## Features
 
@@ -85,13 +86,13 @@ The game consists of a simple Hangman game, well-known for most of us, being pre
 
 ## Deployment
 
-> This project was deployed at Heroku, steps for deploy are listed bellow:
-> fork or clone the repository.
-> Creat a new Heroku app.
-> Set up the configs for the deployment.
-> Link the Heroku app to the repository, then Deploy.
+  - This project was deployed at Heroku, steps for deploy are listed bellow:
+    - Fork or clone the repository.
+    - Creat a new Heroku app.
+    - Set up the configs for the deployment.
+    - Link the Heroku app to the repository, then Deploy.
 
-  - The live link can be found here: [My Game]
+    - The live link can be found here: [My Game](https://hangmanos-42ee37923464.herokuapp.com/)
 
 ## Credits:
 
