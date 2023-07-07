@@ -1,6 +1,14 @@
 """ This file contains the list of words """
 WORDS_LIST = [
-    "dad", "cat",
+    "adult", "adventure",
     "airplane", "house",
     "knife", "sugar",
-    "sword", "hangman"]
+    "tail", "hangman"
+    "biological", "bird",
+    "airplane", "window",
+    "body", "sky",
+    "celebrate", "cotton"
+    "religion", "hope",
+    "travel", "computer",
+    "dog", "song",
+    "music", "rain"]
