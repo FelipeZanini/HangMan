@@ -25,14 +25,20 @@ def play(word):
     right_guesses = []
     wrong_guesses = []
     display_hangman(word, right_guesses, tries)
+    # Evaluate if the user run out of tries or guessed the word
     while len(word) != len(right_guesses) and tries != 6:
         guess = input("\n\nPlease, enter your guess: ").upper()
+        # Break the loop if the user guessed the whole word
         if guess == word:
             return tries
+        # Only accept one single letter as a input, otherwise will keep looping
         while not guess.isalpha() or len(guess) != 1:
             guess = input("Sorry invalid input, please try again: ").upper()
+        # Assures that only new guesses are inputted
         if guess not in right_guesses and guess not in wrong_guesses:
+            # Append the right guess to the list of right guesses
             right_guesses += [guess for char in word if char == guess]
+            # Append the wrong guess to the list of wrong guesses
             if guess not in word:
                 tries += 1
                 wrong_guesses.append(guess)
