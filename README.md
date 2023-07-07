@@ -1,9 +1,9 @@
 # _Hangman'os'_
 
-Hangman'os' is a pure Python language program, running Code Institute mock terminal deployed on Heroku.
+Hangman'os' is a pure Python language program, running in Code Institute mock terminal deployed on Heroku.
 You can use your memory and logical skills, challenging yourself trying to find the right word while feeling the nostalgia of this amazing game.
 
-  Responsice Mockup GOES HERE
+  ![Mock Up](/assets/images/Mockup.png)
 
 ## How to play
 
